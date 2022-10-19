@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "b78859c4-77e2-4727-8150-a08620c2093e": {
+      "ProjectGuid": "b78859c4-77e2-4727-8150-a08620c2093e",
+      "DisplayName": "ResourceExtractor",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}

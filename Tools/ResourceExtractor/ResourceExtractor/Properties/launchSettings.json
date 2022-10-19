@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "ResourceExtractor": {
+      "commandName": "Project",
+      "commandLineArgs": "F:\\Reference\\IntoTheBreath\\assets\\resources\\resource.dat"
+    }
+  }
+}
