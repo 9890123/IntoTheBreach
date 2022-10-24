@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{5A24DB55-18EE-A07B-7B81-70394293416F}</ProjectGuid>
+    <ProjectGuid>{079D398E-4AFC-CD7E-7881-F923D075EBD1}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp-firstpass</AssemblyName>
@@ -58,25 +58,30 @@
   <ItemGroup>
     <Compile Include="Assets\Standard Assets\NGUI\Scripts\Tweening\TweenScale.cs" />
     <Compile Include="Assets\Standard Assets\NGUI\Scripts\UI\UIAnchor.cs" />
+    <Compile Include="Assets\Standard Assets\LITJson\Platform.cs" />
     <Compile Include="Assets\Standard Assets\NGUI\Scripts\Interaction\UIScrollView.cs" />
     <Compile Include="Assets\Standard Assets\NGUI\Scripts\Interaction\UIToggle.cs" />
     <Compile Include="Assets\Standard Assets\NGUI\Scripts\Interaction\UISavedOption.cs" />
     <Compile Include="Assets\Standard Assets\NGUI\Scripts\Interaction\UIScrollBar.cs" />
     <Compile Include="Assets\Standard Assets\NGUI\Scripts\UI\UITextList.cs" />
+    <Compile Include="Assets\Standard Assets\GameFramework\GameLauncher\UpdateSettingViewController.cs" />
     <Compile Include="Assets\Standard Assets\NGUI\Scripts\Interaction\UISoundVolume.cs" />
     <Compile Include="Assets\Standard Assets\NGUI\Scripts\Interaction\UIPlayTween.cs" />
     <Compile Include="Assets\Standard Assets\NGUI\Scripts\Tweening\SpringPosition.cs" />
     <Compile Include="Assets\Standard Assets\NGUI\Scripts\Internal\UIEventListener.cs" />
     <Compile Include="Assets\Standard Assets\NGUI\Scripts\Interaction\UIDragObject.cs" />
     <Compile Include="Assets\Standard Assets\NGUI\Scripts\Interaction\UIButtonRotation.cs" />
+    <Compile Include="Assets\Standard Assets\GameFramework\GameLauncher\GameLauncher.cs" />
     <Compile Include="Assets\Standard Assets\NGUI\Scripts\Internal\ByteReader.cs" />
     <Compile Include="Assets\Standard Assets\NGUI\Scripts\UI\UIStretch.cs" />
     <Compile Include="Assets\Standard Assets\NGUI\Scripts\Tweening\TweenFOV.cs" />
     <Compile Include="Assets\Standard Assets\NGUI\Scripts\UI\NGUIAtlas.cs" />
     <Compile Include="Assets\Standard Assets\NGUI\Scripts\Interaction\UICenterOnClick.cs" />
     <Compile Include="Assets\Standard Assets\NGUI\Scripts\Interaction\UIDragDropContainer.cs" />
+    <Compile Include="Assets\Standard Assets\LITJson\JsonData.cs" />
     <Compile Include="Assets\Standard Assets\NGUI\Scripts\Internal\BetterList.cs" />
     <Compile Include="Assets\Standard Assets\NGUI\Scripts\UI\UILocalize.cs" />
+    <Compile Include="Assets\Standard Assets\LITJson\Extensions.cs" />
     <Compile Include="Assets\Standard Assets\NGUI\Scripts\Internal\BMGlyph.cs" />
     <Compile Include="Assets\Standard Assets\NGUI\Scripts\Tweening\AnimatedWidget.cs" />
     <Compile Include="Assets\Standard Assets\NGUI\Scripts\Tweening\TweenFill.cs" />
@@ -84,6 +89,7 @@
     <Compile Include="Assets\Standard Assets\NGUI\Scripts\Interaction\LanguageSelection.cs" />
     <Compile Include="Assets\Standard Assets\NGUI\Scripts\Interaction\UITable.cs" />
     <Compile Include="Assets\Standard Assets\NGUI\Scripts\Tweening\TweenWidth.cs" />
+    <Compile Include="Assets\Standard Assets\LITJson\JsonReader.cs" />
     <Compile Include="Assets\Standard Assets\NGUI\Scripts\UI\UIPanel.cs" />
     <Compile Include="Assets\Standard Assets\NGUI\Scripts\Interaction\UIImageButton.cs" />
     <Compile Include="Assets\Standard Assets\NGUI\Scripts\Interaction\UIProgressBar.cs" />
@@ -91,12 +97,16 @@
     <Compile Include="Assets\Standard Assets\NGUI\Scripts\Internal\PropertyReference.cs" />
     <Compile Include="Assets\Standard Assets\NGUI\Scripts\Tweening\TweenOrthoSize.cs" />
     <Compile Include="Assets\Standard Assets\NGUI\Scripts\Internal\ActiveAnimation.cs" />
+    <Compile Include="Assets\Standard Assets\LITJson\JsonException.cs" />
     <Compile Include="Assets\Standard Assets\NGUI\Scripts\Internal\UIRect.cs" />
     <Compile Include="Assets\Standard Assets\NGUI\Scripts\Tweening\TweenAlpha.cs" />
+    <Compile Include="Assets\Standard Assets\LITJson\ParserToken.cs" />
     <Compile Include="Assets\Standard Assets\NGUI\Scripts\Interaction\UIWrapContent.cs" />
     <Compile Include="Assets\Standard Assets\NGUI\Scripts\Internal\AnimationOrTween.cs" />
     <Compile Include="Assets\Standard Assets\NGUI\Scripts\Interaction\UISlider.cs" />
+    <Compile Include="Assets\Standard Assets\LITJson\JsonMockWrapper.cs" />
     <Compile Include="Assets\Standard Assets\NGUI\Scripts\UI\UIInputOnGUI.cs" />
+    <Compile Include="Assets\Standard Assets\LITJson\JsonAttribute.cs" />
     <Compile Include="Assets\Standard Assets\NGUI\Scripts\Interaction\UIButtonScale.cs" />
     <Compile Include="Assets\Standard Assets\NGUI\Scripts\UI\UILabelSymbols.cs" />
     <Compile Include="Assets\Standard Assets\GameFramework\Components\GameObjectIndex.cs" />
@@ -119,6 +129,7 @@
     <Compile Include="Assets\Standard Assets\NGUI\Scripts\Interaction\UIButton.cs" />
     <Compile Include="Assets\Standard Assets\NGUI\Scripts\UI\UISpriteData.cs" />
     <Compile Include="Assets\Standard Assets\NGUI\Scripts\UI\UICamera.cs" />
+    <Compile Include="Assets\Standard Assets\GameFramework\Helper\GameDebug.cs" />
     <Compile Include="Assets\Standard Assets\NGUI\Scripts\UI\UISpriteCollection.cs" />
     <Compile Include="Assets\Standard Assets\NGUI\Scripts\Internal\UIWidget.cs" />
     <Compile Include="Assets\Standard Assets\NGUI\Scripts\Interaction\UIDragScrollView.cs" />
@@ -130,27 +141,34 @@
     <Compile Include="Assets\Standard Assets\NGUI\Scripts\UI\NGUIFont.cs" />
     <Compile Include="Assets\Standard Assets\NGUI\Scripts\Tweening\TweenHeight.cs" />
     <Compile Include="Assets\Standard Assets\NGUI\Scripts\Interaction\UIButtonMessage.cs" />
+    <Compile Include="Assets\Standard Assets\GameFramework\GameLauncher\BuiltInDialogueViewController.cs" />
+    <Compile Include="Assets\Standard Assets\GameFramework\AssetPipeline\AssetBundleInfo.cs" />
     <Compile Include="Assets\Standard Assets\NGUI\Scripts\Internal\NGUIText.cs" />
     <Compile Include="Assets\Standard Assets\NGUI\Scripts\Interaction\UIKeyNavigation.cs" />
     <Compile Include="Assets\Standard Assets\NGUI\Scripts\Internal\Localization.cs" />
     <Compile Include="Assets\Standard Assets\NGUI\Scripts\Interaction\UIDragCamera.cs" />
+    <Compile Include="Assets\Standard Assets\LITJson\Lexer.cs" />
     <Compile Include="Assets\Standard Assets\NGUI\Scripts\Interaction\UIPopupList.cs" />
     <Compile Include="Assets\Standard Assets\GameFramework\Components\GameObjectContainer.cs" />
     <Compile Include="Assets\Standard Assets\NGUI\Scripts\UI\UITexture.cs" />
+    <Compile Include="Assets\Standard Assets\LITJson\UnityTypeBindings.cs" />
     <Compile Include="Assets\Standard Assets\NGUI\Scripts\UI\UITooltip.cs" />
     <Compile Include="Assets\Standard Assets\NGUI\Scripts\UI\UIFont.cs" />
     <Compile Include="Assets\Standard Assets\NGUI\Scripts\Tweening\AnimatedAlpha.cs" />
+    <Compile Include="Assets\Standard Assets\LITJson\IJsonWrapper.cs" />
     <Compile Include="Assets\Standard Assets\NGUI\Scripts\Internal\BMSymbol.cs" />
     <Compile Include="Assets\Standard Assets\NGUI\Scripts\Interaction\UIButtonColor.cs" />
     <Compile Include="Assets\Standard Assets\NGUI\Scripts\UI\UIRoot.cs" />
     <Compile Include="Assets\Standard Assets\NGUI\Scripts\UI\UIColorPicker.cs" />
     <Compile Include="Assets\Standard Assets\NGUI\Scripts\Interaction\UIDragDropRoot.cs" />
+    <Compile Include="Assets\Standard Assets\LITJson\JsonMapper.cs" />
     <Compile Include="Assets\Standard Assets\NGUI\Scripts\Interaction\UIToggledComponents.cs" />
     <Compile Include="Assets\Standard Assets\NGUI\Scripts\Tweening\TweenColor.cs" />
     <Compile Include="Assets\Standard Assets\NGUI\Scripts\Interaction\UIWidgetContainer.cs" />
     <Compile Include="Assets\Standard Assets\NGUI\Scripts\Internal\RealTime.cs" />
     <Compile Include="Assets\Standard Assets\NGUI\Scripts\Tweening\TweenVolume.cs" />
     <Compile Include="Assets\Standard Assets\NGUI\Scripts\Internal\NGUITools.cs" />
+    <Compile Include="Assets\Standard Assets\LITJson\JsonWriter.cs" />
     <Compile Include="Assets\Standard Assets\NGUI\Scripts\UI\UIInput.cs" />
     <Compile Include="Assets\Standard Assets\NGUI\Scripts\UI\UIViewport.cs" />
     <Compile Include="Assets\Standard Assets\NGUI\Scripts\Interaction\UIButtonKeys.cs" />
